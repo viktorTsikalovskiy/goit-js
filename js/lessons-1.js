@@ -35,16 +35,40 @@
 // ЗАДАЧА 6
 // НАПИШІТЬ ПРОГРАМУ , ДЕ МИ У КОРИСТОВАЧА ПИТАЄМОСЬ МІСЯЦЬ НАРОДЖЕННЯ, І ПОКАЗУЄМО У ЯКУ ПОРУ РОКУ ВІН НАРОДИВСЯ
 
-const month = Number(prompt("Якого місяця ви народилися?"));
+// const month = Number(prompt("Якого місяця ви народилися?"));
 
-if (month === 12 || month === 1 || month === 2) {
-  console.log("Зима");
-} else if (month >= 3 && month <= 5) {
-  console.log("Весна");
-} else if (month >= 6 && month <= 8) {
-  console.log("Літо");
-} else if (month >= 9 && month <= 11) {
-  console.log("Осінь");
-} else {
-  console.log("Ви ввели некоректне значення");
+// if (month === 12 || month === 1 || month === 2) {
+//   console.log("Зима");
+// } else if (month >= 3 && month <= 5) {
+//   console.log("Весна");
+// } else if (month >= 6 && month <= 8) {
+//   console.log("Літо");
+// } else if (month >= 9 && month <= 11) {
+//   console.log("Осінь");
+// } else {
+//   console.log("Ви ввели некоректне значення");
+// }
+
+// ЗАДАЧА 8
+// НАПИШІТЬ ПРОГРАМУ , ЯКА БУДЕ ЗАПИТУВАТИ У КОРИСТУВАЧА ПЕРІОД ПІДПИСКИ НА СЕРВІС ТА ПОКАЗУВАТИМЕ ЦІНУ ПІДПИСКИ(ВИКОРИСТАЙ  SWITCH)
+// ЯКЩО ДЕНЬ - ціна 1.99
+// ЯУЩО НЕДІЛЯ - ціна 5.99
+// ЯКЩО МІСЯЦЬ - ціна 10.99
+// ЯКЩО РІК - ціна 100.99
+
+const user = prompt("Період підписки на сервіс")
+switch (user) {
+  case "День":
+    console.log("Ціна 1.99");
+    break;
+  case "Неділя":
+    console.log("Ціна 5.99");
+    break;
+  case "Місяць":
+    console.log("Ціна 10.99");
+    break;
+  case "Рік":
+    console.log("Ціна 100.99");
+    break;
+  default: console.log("error");
 }
