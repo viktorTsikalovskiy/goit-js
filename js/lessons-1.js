@@ -56,19 +56,34 @@
 // ЯКЩО МІСЯЦЬ - ціна 10.99
 // ЯКЩО РІК - ціна 100.99
 
-const user = prompt("Період підписки на сервіс")
-switch (user) {
-  case "День":
-    console.log("Ціна 1.99");
-    break;
-  case "Неділя":
-    console.log("Ціна 5.99");
-    break;
-  case "Місяць":
-    console.log("Ціна 10.99");
-    break;
-  case "Рік":
-    console.log("Ціна 100.99");
-    break;
-  default: console.log("error");
+// const user = prompt("Період підписки на сервіс")
+// switch (user) {
+//   case "День":
+//     console.log("Ціна 1.99");
+//     break;
+//   case "Неділя":
+//     console.log("Ціна 5.99");
+//     break;
+//   case "Місяць":
+//     console.log("Ціна 10.99");
+//     break;
+//   case "Рік":
+//     console.log("Ціна 100.99");
+//     break;
+//   default: console.log("error");
+// }
+
+// ЗАДАЧА 9
+// НАПИШІТЬ ЦИКЛ FOR ЯКА БУДЕ ВИВОДИТИ У КОНСОЛЬ ЧИСЛА ЗА ЗРОСТАННЯМ ВІД MIN ДО MAX, ПІСЛЯ ТОГО ЧИСЛА КРАТНІ 10
+
+let min = 3;
+let max = 56;
+
+for (let i = min; i <= max; i++) {
+  console.log(i);
+}
+for (let i = min; i <= max; i++) {
+  if (i % 10 === 0) {
+    console.log(i);
+  }
 }
