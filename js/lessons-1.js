@@ -102,10 +102,10 @@
 // Классика, Рок-н-ролл
 // Рэп, Регги, Классика, Рок-н-ролл
 
-const styles = ["Джаз", "Блюз"];
-styles.push("Рок-н-ролл");
-styles.splice(1, 1, "Классика");
-styles.shift();
-console.log(styles);
-styles.unshift("Рэп", "Регги");
-console.log(styles);
+// const styles = ["Джаз", "Блюз"];
+// styles.push("Рок-н-ролл");
+// styles.splice(1, 1, "Классика");
+// styles.shift();
+// console.log(styles);
+// styles.unshift("Рэп", "Регги");
+// console.log(styles);
