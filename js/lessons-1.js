@@ -115,10 +115,28 @@
 // повідомлення у форматі <індекс елемента> та <значення елемента>.
 // Номерація для кожного елемента масива ['Mango', 'Poly', 'Ajax'] з індексом 0 буде виведено 1 - Mango, а для индекса 2 выведет 3 - Ajax.
 
-function logItems(array) {
-    for (let i = 0; i < array.length; i += 1){
-        console.log(`${i+1}${array[i]}`);
+// function logItems(array) {
+//     for (let i = 0; i < array.length; i += 1){
+//         console.log(`${i+1}${array[i]}`);
+//     }
+// }
+// const name = ["Mango", "Poly", "Ajax"];
+// logItems(name);
+
+// ЗАДАЧА 3
+// Напишіть код , який шукає саме найменше число в масиві
+// 1) напишіть циклом for
+// const numbers = [2, 17, 94, 1, 23, 37];
+// 2) перепишіть функцією findSmallestNumber(numbers)
+console.log(findSmallestNumber([2, 17, 94, 1, 23, 37]));
+console.log(findSmallestNumber([49, 4, 83, 7, 12]));
+
+function findSmallestNumber(number) {
+  let min = number[0];
+  for (const element of number) {
+    if (min > element) {
+      min = element;
     }
+  }
+  return min;
 }
-const name = ["Mango", "Poly", "Ajax"];
-logItems(name);
