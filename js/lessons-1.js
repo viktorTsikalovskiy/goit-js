@@ -1,8 +1,19 @@
 // ЗАДАЧА 3
 // ПОРАХУЙТЕ СУМУ ТОВАРІВ У КОРЗИНІ . ПОТРІБНО ВВЕСТИ СУМУ 3-Х ТОВАРІВ І ПОРАХУВАТИ ЇХ СУМУ
 
-let priceTv = Number(prompt("Ввндіть ціну за телевізор."));
-let pricePhone = +prompt("Ввндіть ціну за телефон.");
-let priceRadio = +prompt("Ввндіть ціну за радіо.");
+// let priceTv = Number(prompt("Ввндіть ціну за телевізор."));
+// let pricePhone = +prompt("Ввндіть ціну за телефон.");
+// let priceRadio = +prompt("Ввндіть ціну за радіо.");
 
-console.log(priceTv + pricePhone + priceRadio);
+// console.log(priceTv + pricePhone + priceRadio);
+// ЗАДАЧА 4
+// ВИКОРИСТОВУЮЧИ КОНСТРУКЦІЮ IF...ELSE , НАПИШИ КОД, ЯКИЙ БУДЕ ЗАПИТУВАТИ:
+// "СКІЛЬКИ МІСЯЦІВ МАЄ РІК", ЯКЩО КОРИСТУВАЧ ВВОДИТЬ 12 ТО У КОНСОЛІ ПИШЕ ВІРНО, ЯКЩО НЕ ПРАВИЛЬНО КОРИСТУВАЧ ВВІВ, ТОДІ У КОНСОЛІ ПИШЕ
+// "НЕ ЗНАЄТЕ? 12"
+
+let question = +prompt("СКІЛЬКИ МІСЯЦІВ МАЄ РІК?");
+if (question === 12) {
+  console.log("Вірно");
+} else {
+  console.log("НЕ ЗНАЄТЕ? 12");
+}
