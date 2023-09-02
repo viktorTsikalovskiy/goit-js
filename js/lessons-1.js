@@ -141,14 +141,33 @@
 //   return min;
 // }
 
-
 // ЗАДАЧА 4
 //  Провірте , чи являється рядок полідромом
-const str = "ротатор";//true
-const newString = "Hello";//false
-const newStr = str.split("").reverse().join("");
-console.log(str === newStr);
-const newNewString = newString.split("").reverse().join("");
-console.log(newString === newNewString);
+// const str = "ротатор";//true
+// const newString = "Hello";//false
+// const newStr = str.split("").reverse().join("");
+// console.log(str === newStr);
+// const newNewString = newString.split("").reverse().join("");
+// console.log(newString === newNewString);
+// ЗАДАЧА 6
+// Напишіть ф-цію greet(name) , яка при виклику буде получати імя (як приклад , "Василь"), і логінувати рядок "Привіт, <імя>".У випадку , відсутнього
+// відсутнього значення, виводе аргумент "Привіт , гість"
+// console.log(greet("Василь")); //Привіт Василь
+// console.log(greet()); //Привіт гість
 
+// function greet(name = "гість") {
+//   return `Привіт, ${name}`;
+// }
+// ЗАДАЧА 7
+// Виконайте рефакторинг замінивши обявлення ф-ції з function declaration на function expression та на стрілочну функцію
+// // function checkNumbers(a, b) {
+// //   if (a > b) {
+// //     return `число ${a} більше ${b}`;
+// //   }
 
+// //   return `число ${b} більше ${a}`;
+// // }
+
+// ЗАДАЧА 8
+// Напишіть ф-цію capitalize , яка буде приймати рядок і буде повертати новий рядок , де кожне слово буде з великої букви
+// capitalize('the quick brown fox')// 'The Quick Brown Fox '
